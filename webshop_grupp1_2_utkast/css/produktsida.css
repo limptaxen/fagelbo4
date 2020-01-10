@@ -1,0 +1,112 @@
+/* Produktsida*/
+/*produktmodul hämtad den 02-01-2020 från https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_product_card*/
+/* och knapp från https://codepen.io/imprakash/pen/GgNMXO?fbclid=IwAR1g4ypq0FBNNB9o0Ah8PvY0Ahe-orv1Y2om-qBzDmmycRC6LpsQgLNRPoc*/
+
+.produktcontainer{
+    background-color:#fff;
+    width: 100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 5vh auto;
+    text-align: center;}
+    
+    #produktsida{
+    background-color: #fff;
+    border: 1px #000;
+    }
+    
+    
+    img{
+         max-width:100%;
+    
+        }
+    
+    .pris{
+    font-size: 1.5rem;
+    color: grey;
+    padding:10px;
+    }
+    
+    .produktcontainer h1{
+    padding-top: 15px;
+    }
+    
+    .Beskrivn{
+    padding:18px;
+    }
+    
+    /*knapp och popup*/
+    .box {
+      margin: 0 auto;
+      background: rgba(255,255,255,0.2);
+      padding: 35px;
+      border: 2px solid #fff;
+      border-radius: 20px/50px;
+      background-clip: padding-box;
+      text-align: center;
+    }
+    
+    
+    .buttoncontainer{
+    display:flex;
+    justify-content: space-around;
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      visibility: hidden;
+      opacity: 0;
+    }
+    
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    
+    .popup {
+      margin: 30vh auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      width: 30%;
+      position: relative;
+    }
+    
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      opacity: 0.7;
+    }
+    .popup .content {
+      max-height: 30%;
+      overflow: auto;
+    }
+    
+    @media only screen and (max-width: 768px){
+      .box{
+        width: 70%;
+      }
+      .popup{
+        width: 80%;
+      }
+    }
+    
+        /*slut produktmodul*/
+
